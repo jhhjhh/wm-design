@@ -53,19 +53,31 @@
     text-align left
     margin-bottom 0
   .product-details
-    position relative
-    width 95%
-    max-width 820px
+    width 726px
+  .main-image
+    float left
+    width 324px
   .product-images-thumbs
     float left
-    width 52px // 48px (thumb width) + 4px (margin-right)
-  .main-image
-    float right
+    width 48px + 4px // 52px = 48px (thumb width) + 4px (margin-right)
   .product-images
-    width 386px // 52px (see above) + 324 (main-image) + 10 (gutter)
-    position absolute
+    float left
+    width 52px + 324px + 10px // 52px (see above) + 324 (main-image) + 10 (gutter)
   .product-copy
-    margin-left 406px
+    float right
+    width 726px - 386px
+
+@media screen and (min-width: 820px)
+  .product-details
+    width 780px
+  .product-copy
+    width 780px - 386px - 10px
+
+@media screen and (min-width: 960px)
+  .product-details
+    width 920px
+  .product-copy
+    width 920px - 386px - 30px
 
 .cart-button
   headerText()

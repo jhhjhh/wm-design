@@ -1,0 +1,194 @@
+/* =================
+ * Customer Accounts
+ * ================= */
+
+.large_form input {
+  margin-bottom: 6px;
+  width: 200px;
+}
+.large_form label {
+  float: left;
+  width: 90px;
+  padding-right: 8px;
+}
+
+.page-header #page-title{ float: left; border: none; margin: 0; }
+.page-header #page-actions{ float: right; }
+
+.templateCustomersLogin form input,
+.templateCustomersRegister form input{
+  float: left;
+}
+.templateCustomersLogin form label,
+.templateCustomersRegister form label{
+  float: left;
+  min-width: 120px;
+  line-height: 22px;
+}
+.templateCustomersLogin .form-row,
+.templateCustomersActivateAccount .form-row,
+.templateCustomersRegister .form-row{
+  margin: 0 0 8px 0;
+}
+.templateCustomersLogin .action-bottom,
+.templateCustomersRegister .action-bottom{
+  margin: 20px 0 0 0;
+}
+.templateCustomersLogin .action-bottom .note,
+.templateCustomersRegister .action-bottom .note{
+  font-size: 11px;
+  padding: 0 0 0 5px;
+  line-height: 27px;
+}
+
+/* >> login Form */
+#login_email {
+  padding-top: 15px;
+}
+
+.action_bottom {
+  margin-top: 15px;
+}
+
+#customer_login, #recover-password {
+  float: left;
+  width: 55%;
+}
+#recover-password{
+  display: none;
+  margin-top: 20px;
+}
+#recover-password h2 {
+  font-size: 1.2em;
+}
+#recover_email label{
+  min-width: 75px;
+}
+#forgot_password{
+  margin: 2px 0 0 0;
+  font-size: 11px;
+  float: left;
+}
+
+#guest{
+  text-align: center;
+  float: right;
+  width: 30%
+}
+
+#guest h3 {
+  margin-top: 0;
+}
+
+#customer_login, #recover-password, #guest {
+  border: dashed 1px silver;
+  padding: 1em;
+  height: 140px;
+}
+
+
+/* >> manage orders and addresses */
+
+.customer_address {
+  text-transform: capitalize;
+}
+.post-code {
+  text-transform: uppercase;
+}
+
+#customer_orders{
+  width: 75%;
+  float: left;
+}
+#customer_sidebar{
+  float: right;
+  width: 20%;
+}
+.address p,
+.view_address p{ margin: 0; }
+
+#view_address{
+  border-top: solid 1px gray;
+  padding: 10px 0 0 0;
+  margin-top: 10px;
+  display: block;
+}
+
+.address_actions{ float: right; }
+.address_actions .action_edit{
+  border-right: solid 1px gray;
+  padding-right: 10px;
+}
+
+.action_top{  margin: 0 0 20px 0; }
+
+.action_edit,
+.action_delete,
+.action_add{
+  display: inline-block;
+}
+
+.default_address{
+  color: gray;
+}
+.address_table,
+#add_address{
+  border: dotted 1px gray;
+  padding: 10px;
+  margin: 0 0 20px 0;
+}
+.address_table .label,
+#add_address .label{
+  width: 125px;
+  padding-left: 0;
+}
+.address_table h4{
+  padding: 0 0 5px 0;
+  margin: 0 0 10px 0;
+}
+.customer_address_table{ margin: 0; }
+.customer_address_table td{ border: none; }
+.customer_address_table input{ margin: 0 5px 0 0; }
+.customer_address .action-bottom{ margin-left: 141px; }
+
+#add_address_title {
+  margin-top: 0.1em;
+}
+
+/** >> view individual orders */
+.order_date{
+  border-bottom: solid 1px gray;
+  padding: 0 0 5px 0;
+  margin: 0 0 20px 0;
+}
+
+#order_address{
+  overflow: hidden; height: 1%;
+  margin: 0 0 20px 0;
+}
+#order_address #order_payment,
+#order_address #order_shipping{
+  float: left;
+  width: 46%;
+  margin-right: 2%;
+}
+
+
+/* ===== customer orders ===== */
+
+#customer_orders table {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#order_details thead, #customer_orders thead {
+  border-bottom: 2px solid #9E9E9E;
+}
+
+#order_details tr, #customer_orders tr {
+  border-bottom: 1px dashed #BBBBBB;
+}
+
+#order_details td, #order_details th, #customer_orders td, #customer_orders th {
+  padding: 0.5em 0.8em;
+}

@@ -1,0 +1,338 @@
+////////////////////////////////////////////////////////////
+//    libraries + plugins
+////////////////////////////////////////////////////////////
+
+@import 'nib'
+@import 'libs/normalize.styl'
+@import 'libs/html5top.styl'
+@import 'libs/tipsy.styl'
+@import 'libs/isotope.styl'
+@import 'libs/cloudzoom.styl'
+// basic styles + mixins
+@import 'basic'
+
+////////////////////////////////////////////////////////////
+//   SECTIONS
+////////////////////////////////////////////////////////////
+
+@import 'sections/footer'
+@import 'sections/header'
+@import 'sections/cart-update'
+@import 'sections/reviews'
+
+/////////////////////////////////////////
+//    PAGINATION
+/////////////////////////////////////////
+
+.pagination
+  .pagination-num-showing
+    text-align center
+    color lighten(nearBlack, 30%)
+  ul
+    centeredNav()
+    li
+      margin 1em 0.1em
+      a
+        background-color nearBlack
+        color white
+        padding 0.3em 0.7em
+        &:hover
+          background-color lighter(nearBlack, 12%)
+
+////////////////////////////////////////////////////
+//    Currency dropdown
+////////////////////////////////////////////////////
+
+#currency-dropdown
+  text-transform uppercase
+  hoverLink()
+  handPointer()
+
+#currency-box
+  clearfix()
+  font-size 0.85em
+  padding-right 0.4em
+
+#currencies
+  handPointer()
+
+#currencies span
+  display block
+  float right
+  margin 0.1em
+  padding 0.22em 0.45em 0.18em 0.45em
+  border 1px solid nearBlack
+  background white
+  &:hover
+    background-color darken(white, 9%)
+
+#currencies
+  .selected
+    font-weight normal
+    color white
+    background none nearBlack
+    &:hover
+      background-color lighten(nearBlack, 10%)
+
+////////////////////////////////////////////////////
+//    Cities
+////////////////////////////////////////////////////
+
+.full-image
+  text-align center
+  img
+    width 100%
+    max-width 500px
+
+.city-features
+  .city-feature
+    width 500px
+    border solid nearBlack
+    border-width 2px 0
+    .content
+      img
+        float left
+        max-width 150px
+      .copy
+        float right
+        width 500px - 150px - 20px
+
+@media screen and (min-width: 400px)
+  .city
+    centered(380px)
+  .city-desc
+    margin-left 2%
+    float left
+    width 200px
+
+@media screen and (min-width: 600px)
+  .city
+    width 580px
+
+/* ====================
+   ======= BLOG =======
+   ==================== */
+
+.post
+  .title
+    a
+      invisibleLink()
+
+/* ===========================
+   ======== Accordion ========
+   =========================== */
+
+.top-accordion
+  margin-bottom -1em !important
+.top-accordion dd
+  border-bottom none !important
+.top-accordion dt
+  border-bottom none !important
+
+.accordion
+  margin-bottom 0
+
+.single-accordion
+  margin-top 0
+.single-accordion dt
+  border-top none !important
+
+.accordion a 
+  outline 0
+
+.accordion dt, .accordion dd
+  margin 0
+  padding 9px 0
+  border-top 1px dotted gray
+  border-bottom 1px dotted gray
+  border-bottom 0
+
+.accordion dt
+  background-repeat no-repeat
+  background-position right
+
+.accordion dt:last-of-type, .accordion dd:last-of-type
+  border-bottom 1px dotted gray
+
+.accordion
+  dt
+    a
+      text-decoration none
+      display block
+      font-weight bold
+      color nearBlack
+
+.accordion dd
+  padding-top 2px
+  border-top 0
+
+.accordion dd:last-of-type
+  border-top 1px solid white
+  position relative
+  top -1px
+
+.accordion ul
+  margin 0
+
+/* ====================
+   ======= PAGE =======
+   ==================== */
+
+.page
+  centered(96%)
+  max-width 600px
+
+/* =====================
+   ======= PRESS =======
+   ===================== */
+
+.press-items
+  text-align center
+  hr
+    centered(90%)
+    max-width 400px
+    margin-top 0.6em
+  header
+    .date
+      margin-top 0.5em
+    a
+      display inline-block
+      padding 0.5em
+
+/* ===============================================================
+   EDITORIALS
+   =============================================================== */
+
+.editorials-grid-wrap
+  centered(310px) // 1 block
+
+@media screen and (min-width: 620px)
+  .editorials-grid-wrap
+    width 620px // 2 blocks
+@media screen and (min-width: 930px)
+  .editorials-grid-wrap
+    width 930px // 3 blocks
+@media screen and (min-width: 1240px)
+  .editorials-grid-wrap
+    width 1240px // 4 blocks
+
+.editorials-grid-item
+  width 300px
+  float left
+  margin 5px
+  a
+    invisibleLink()
+    h3
+      text-align center
+
+////////////////////////////////////////////////////////////////////
+//   collections
+////////////////////////////////////////////////////////////////////
+
+.collection-description
+  centered(96%)
+  max-width 600px
+
+/////////////////////////////////////////////////////////////
+//   slide collection
+/////////////////////////////////////////////////////////////
+
+.slide-collection
+  centered(100%)
+  max-width 910px
+
+///////////////////////////////////////////////////////////////////////
+//    Rewards
+///////////////////////////////////////////////////////////////////////
+
+.ambassador-container
+  centered(750px)
+
+//////////////////////////////////////////
+//    SEARCH
+//////////////////////////////////////////
+
+.search
+  centered(96%)
+  max-width 516px
+  .search-form
+    text-align center
+    centered(200px)
+    margin-top 1em
+    .button
+      margin-top 0.6em
+  .results
+    .item
+      margin-top 1em
+      .thumbnail
+        margin-right 1em
+        float left
+      .search-excerpt
+        float left
+        width 100%
+        max-width 400px
+        h3
+          margin 0 0 0.5em 0
+          a
+            invisibleLink()
+
+///////////////////////////////////////////////////////////
+//   Designers
+///////////////////////////////////////////////////////////
+
+.brands-grid
+  clearfix()
+  width gridWidth(1, 220px, 5px)
+  margin 0 auto
+
+// 446
+@media screen and (min-width: 448px)
+  .brands-grid
+    width gridWidth(2, 220px, 5px)
+
+//668
+@media screen and (min-width: 672px)
+  .brands-grid
+    width gridWidth(3, 220px, 5px)
+
+// 890
+@media screen and (min-width: 896px)
+  .brands-grid
+    width gridWidth(4, 220px, 5px)
+
+// 1112
+@media screen and (min-width: 1120px)
+  .brands-grid
+    width gridWidth(5, 220px, 5px)
+
+.brands-grid
+  .designer
+    margin 5px
+    float left
+    width 220px
+    height 380px
+    a
+      invisibleLink()
+      h3
+        text-align center
+      p
+        text-align justify
+
+
+
+//////////////////////////////////////////////////////////
+//  Pages
+//////////////////////////////////////////////////////////
+
+@import 'pages/index'
+@import 'pages/collections'
+@import 'pages/product'
+@import 'pages/about'
+@import 'pages/cart'
+@import 'pages/accounts'
+
+/////////////////////////////////////////////////
+//   html5 bottom part
+/////////////////////////////////////////////////
+
+@import 'libs/html5bottom'

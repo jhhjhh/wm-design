@@ -1,0 +1,103 @@
+//////////////////////////////////////////////////////////////////////////////
+//    INDEX
+//////////////////////////////////////////////////////////////////////////////
+
+blockBorderWidth = 4px
+
+// a block is 170px
+// gutter is 10px (5px padding)
+#index-grid-wrap
+  centered(306px) // 1 block
+
+@media screen and (min-width: 462px)
+  #index-grid-wrap
+    width 462px // 2 blocks
+
+@media screen and (min-width: 618px)
+  #index-grid-wrap
+    width 618px // 3 blocks
+
+@media screen and (min-width: 774px)
+  #index-grid-wrap
+    width 774px // 4 blocks
+
+@media screen and (min-width: 930px)
+  #index-grid-wrap
+    width 930px // 4 blocks
+
+.index-grid-item
+  position relative
+  float left
+  width 150px
+  height 150px
+  margin 3px 0
+  .inner
+    color white
+    background-color nearBlack
+    padding 0.3em
+    text-shadow: 0 0 6px rgba(0,0,0,0.15);
+    position absolute
+    bottom 0
+    h3
+      font-size 2em
+      margin 0.4em 0 0.1em 0
+      line-height 1
+    p
+      margin 0 0 0.3em 0
+      font-size 1.1em
+    a
+      condensedFont()
+      text-transform uppercase
+      invisibleLink()
+      font-size 1.4em
+      display block
+      float left
+      border 1px solid white
+      border-width 1px 0
+      i
+        font-size 0.8em
+  .newsletter
+    width 306px - 2 * blockBorderWidth
+    height 150px - 2 * blockBorderWidth
+    border blockBorderWidth solid nearBlack
+    background-color white
+    text-align center
+    h3
+      font-size 1.6em
+      margin 0.7em 0 0 0
+    p
+      margin 0.5em 0
+    input
+      margin-top 0.5em
+
+/* ===== Side ===== */
+
+.full-circle
+  invisibleLink()
+  display block
+  text-align center
+  position relative
+  headerText()
+  width 150px
+  height 150px
+  -moz-border-radius 75px
+  -webkit-border-radius 75px
+  border-radius 75px
+
+.full-circle > p
+  position absolute
+  font-size 1.3em
+  width 150px - 16px
+  margin 0 8px
+
+.free-delivery { background-color: #FFFF9A; }
+.free-delivery:hover { background-color: #FFFF80; }
+.world-shipping { background-color: #EBD4FF; }
+.world-shipping:hover { background-color: #E1C6F8; }
+
+.free-delivery p {
+  top: 43px;
+}
+.world-shipping p {
+  top: 52px;
+}

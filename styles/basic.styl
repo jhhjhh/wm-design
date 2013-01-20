@@ -1,0 +1,176 @@
+// Global Variables
+
+// !!!!! TAKE OFF TIMES BELOW, FOR TESTING
+regularFont()
+  font-family "nimbus-sans", Times, "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif
+  font-weight 400
+  font-stretch normal
+ 
+condensedFont()
+  font-family "nimbus-sans-condensed", Times, "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed",  "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif
+  font-weight 400
+  font-stretch condensed
+
+smallFont = Verdana, Geneva, sans-serif
+smallFontSize = 11px
+baseFontSize = 12px
+
+accentColour = #E50000
+veryLightGray = #F8F8F8
+veryLightGrayBorder = darken(veryLightGray, 6%)
+nearBlack = #222
+
+// All the z-indexes in one place
+headerZindex = 100
+currencyZindex = 100
+cartUpdateZindex = 100
+
+// pastel colours
+pastelColour1 = #D7F9FA
+pastelColour2 = #FFCAF4
+pastelColour3 = #FDFF88
+pastelColour4 = #CCC2FF
+pastelColour5 = #A3FFCA
+pastelColour6 = #FFCBC7
+
+// mixins + functions
+
+// function that computes width based on column size and margin size
+gridWidth(n, colWidth, marginWidth)
+  n * ( colWidth + 2 * marginWidth )
+
+handPointer()
+  cursor hand
+  cursor pointer
+
+centered(w)
+  width w
+  margin 0 auto
+
+threeFive(w)
+  width w px
+  height 1.6666 * w px
+
+invisibleLink()
+  text-decoration none
+  color inherit
+
+hoverLink()
+  invisibleLink()
+  &:hover
+    text-decoration underline
+
+centeredNav()
+  condensedFont()
+  list-style none
+  text-align center
+  padding-left 0
+  margin 0
+  li
+    display inline-block
+    a
+      text-transform uppercase
+      display block
+      padding: 0.3em 0.4em
+      invisibleLink()
+
+verticalNav()
+  condensedFont()
+  list-style none
+  padding-left 0
+  margin 0
+  li
+    a
+      display block
+      padding: 0.1em 0
+
+headerText()
+  font-weight bold
+  text-transform uppercase
+
+// general styles
+
+html
+  overflow-y scroll // force vertical scroll bar
+
+body
+  regularFont()
+  font-size baseFontSize
+  color nearBlack
+
+#wrapper
+  width 100%
+  margin 0 auto
+  max-width 1400px
+
+h1,h2,h3,h4,h5,h6
+  headerText()
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; }
+
+.big-title
+  text-align center
+
+.main-title
+  text-align center
+  font-size 2.2em
+  margin 0
+
+.un-edge
+  width 97%
+  margin 0 auto
+
+a
+  outline 0
+  color gray
+  &:hover
+    color nearBlack
+
+a:focus
+  outline 0
+
+input
+  border 1px solid silver
+
+.copy
+  text-align justify
+  ul
+    padding-left 25px
+    list-style-type square
+    li
+      margin 0.3em 0
+
+pastelColour(varCol)
+  &.current, &:hover
+    background-color varCol
+
+.c1
+  pastelColour(pastelColour1)
+.c2
+  pastelColour(pastelColour2)
+.c3
+  pastelColour(pastelColour3)
+.c4
+  pastelColour(pastelColour4)
+.c5
+  pastelColour(pastelColour5)
+.c6
+  pastelColour(pastelColour6)
+
+.wma
+  color accentColour
+
+.button
+  text-decoration none
+  color white
+  background-color accentColour
+  padding 0.7em
+  border none
+  &:hover
+    background-color darken(accentColour, 15%)
+    color white

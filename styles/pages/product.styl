@@ -1,0 +1,133 @@
+/* =====================
+   ====== PRODUCT ======
+   ===================== */
+
+/*
+  main image width: 324px
+  product copy width: 300-520px
+  gutter betweenmain image and copy: 20px
+  main-image with side controls + 20px gutter: 406px
+  minimal side by side view: 706px
+*/
+
+.product-title
+  text-align center
+  line-height 1em
+  margin 0.1em 0 0.3em 0
+  font-size 1.7em
+
+.product-title-big
+  display none
+
+.product-details
+  margin 0 auto
+  width 96%
+
+.product-images-copy
+  min-height 540px
+
+.product-images-thumbs a
+    float left
+    margin 0 4px 4px 0
+
+.product-images
+  width 324px
+  margin 0 auto
+
+.product-copy
+  max-width 520px
+  margin 0 auto
+
+.size-and-cart-button
+  clearfix()
+
+.accordion-designer-title
+  font-size 1.5em
+  margin-top 0
+
+@media screen and (min-width: 746px)
+  .product-title-small
+    display none
+  .product-title-big
+    display block
+    text-align left
+    margin-bottom 0
+  .product-details
+    position relative
+    width 95%
+    max-width 820px
+  .product-images-thumbs
+    float left
+    width 52px // 48px (thumb width) + 4px (margin-right)
+  .main-image
+    float right
+  .product-images
+    width 386px // 52px (see above) + 324 (main-image) + 10 (gutter)
+    position absolute
+  .product-copy
+    margin-left 406px
+
+.cart-button
+  headerText()
+  font-size 1.3em
+  padding 0.4em 0.8em
+
+/* ===== Product form ===== */
+
+.size-select {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  float: left;
+}
+@media all and (max-width: 1030px) {
+  .size-select { float: none; margin-bottom: 12px; }
+}
+
+.variant-input {
+    display: none;
+}
+.variant-label {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid black;
+  padding: 1px 6px;
+  margin-right: 4px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.variant-label:hover {
+  background-color: #E6E6E6;
+}
+.variant-selected {
+    background-color: black;
+    color: white;
+}
+.variant-selected:hover {
+  background-color: #001309;
+}
+
+.cart-button-wrap {
+  float: right;
+  margin: 0 0 10px 0;
+}
+
+//////////////////////////////////////////////////////////////////////
+//    Social sharing
+//////////////////////////////////////////////////////////////////////
+
+#sharing {
+    padding: 10px 0 0 0;
+}
+#sharing ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+#sharing li {
+    margin: 0;
+    float: left;
+}

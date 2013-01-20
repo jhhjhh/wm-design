@@ -1,0 +1,59 @@
+// Footer
+
+.bottom-wrap
+  font-size 1.05em
+  background-color veryLightGray
+  border-top 1px solid veryLightGrayBorder
+  margin-top 0.5em
+  padding-top 1em
+.footer
+  margin 0 auto
+  .column
+    text-align center
+    margin-bottom 1.2em
+  .search-form
+    .text-input
+      width 120px
+      padding 4px
+    .button
+      padding 5px
+
+.footer-menu
+  verticalNav()
+  a
+    text-transform capitalize
+    hoverLink()
+
+.social-footer
+  font-size 1.1em
+  h4
+    font-size 1em
+    margin 0
+  .wma
+    font-size 1.2em
+  a
+    invisibleLink()
+
+@media screen and (min-width: 280px)
+  .footer
+    centered(280px)
+    .column
+      margin 1.2em
+      float left
+      text-align left
+
+@media screen and (min-width: 394px)
+  .footer
+    width 394px
+
+@media screen and (min-width: 431px)
+  .footer
+    width 431px
+
+@media screen and (min-width: 659px)
+  .footer
+    width 659px
+
+@media screen and (min-width: 874px)
+  .footer
+    width 874px

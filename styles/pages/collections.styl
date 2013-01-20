@@ -1,0 +1,86 @@
+///////////////////////////////////////////////////////////////
+//    COLLECTIONS
+///////////////////////////////////////////////////////////////
+
+/* ===== Product Box ===== */
+
+.product-grid
+  clearfix()
+  width gridWidth(1, 220px, 2px)
+  max-width gridWidth(5, 220px, 2px)
+  margin 0 auto
+
+// 446
+@media screen and (min-width: 448px)
+  .product-grid
+    width gridWidth(2, 220px, 2px)
+
+//668
+@media screen and (min-width: 672px)
+  .product-grid
+    width gridWidth(3, 220px, 2px)
+
+// 890
+@media screen and (min-width: 896px)
+  .product-grid
+    width gridWidth(4, 220px, 2px)
+
+// 1112
+@media screen and (min-width: 1120px)
+  .product-grid
+    width gridWidth(5, 220px, 2px)
+
+.product-box
+  float left
+  margin 2px
+  height 425px
+  width 220px
+  text-align center
+  font-family: smallFont
+  font-size: 0.8em;
+  a
+    invisibleLink()
+
+.product-grid-min .product-box
+  threeFive(150)
+
+.product-box
+  .product-title
+    font-size 1em
+    font-family smallFont
+    margin 0.4em 0
+    color nearBlack
+    font-weight normal
+    text-transform none
+
+.product-box img
+  threeFive(220)
+
+.product-grid-min .product-box img
+  threeFive(150)
+
+.sale-price
+  color darken(accentColour, 10%)
+
+.sold-out
+  color #7B3E3E
+
+.compare-at
+  font-style italic
+  color darken(white, 50%)
+
+.product-box-image
+  display inline-block
+  position relative
+  threeFive(220)
+
+.product-grid-min .product-box-image
+  threeFive(150)
+
+.product-box-image img.hover {
+  display: none;
+  position: absolute;
+}
+.product-box-image:hover img.hover {
+    display: block;
+}

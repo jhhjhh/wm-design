@@ -1,9 +1,0 @@
-Setup Workflow
-==============
-
-cd Dropbox/git/wm-design/styles/
-stylus -w -u nib base.styl
-
-and then in the same directory
-
-cleancss -o base-min.css base.css

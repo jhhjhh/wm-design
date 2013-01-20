@@ -13,9 +13,13 @@ Setup Workflow
 cd Dropbox/git/wm-design/styles/
 stylus -w -u nib base.styl
 
-and then in the same directory
+and then in the same directory:
 
-cleancss -o base-min.css base.css
+python when-changed.py base.css  cleancss -o base-min.css base.css
+
+- first command compiles the .styl files into one .css
+- second minifies that css file (better than the stylus minifier)
+- both of these commands watch files for changes.
 
 Todo
 ------------
@@ -34,11 +38,11 @@ Menu bar:
 
 Product collection page:
 
-- titre du produit et le prix doivent etre aligne a gauche de la photo
-- plus de whitespace entre photo et titre
+- [done] titre du produit et le prix doivent etre aligne a gauche de la photo
+- [done] plus de whitespace entre photo et titre
 
 Product page:
-- la largeur de la page est tres petite, il faut donc mettre plus de white space entre la photo et le cote texte. De maniere plus generale, essayons de plus 'aerer' cette page
+- [done] la largeur de la page est tres petite, il faut donc mettre plus de white space entre la photo et le cote texte. De maniere plus generale, essayons de plus 'aerer' cette page
 - font de la descripption doit etre un peu plus grand
 - spread the joy doit etre aligne a la droite de page. 
 - je veux un pin it bouton sur le coin droite en bas de la photo

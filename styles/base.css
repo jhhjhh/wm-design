@@ -1386,11 +1386,11 @@ input {
 .product-box-image:hover img.hover {
   display: block;
 }
-.product-details .product-title {
-  text-align: center;
+.product-title {
   line-height: 1em;
   margin: 0.1em 0 0.3em 0;
-  font-size: 1.7em;
+  font-size: 1.2em;
+  text-align: center;
 }
 .product-title-big {
   display: none;
@@ -1398,6 +1398,15 @@ input {
 .product-details {
   margin: 0 auto;
   width: 96%;
+}
+.main-image {
+  position: relative;
+}
+.pinterest-in-image {
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  z-index: 100;
 }
 .product-images-copy {
   min-height: 540px;
@@ -1411,6 +1420,7 @@ input {
   margin: 0 auto;
 }
 .product-copy {
+  font-size: 1.1em;
   max-width: 520px;
   margin: 0 auto;
 }

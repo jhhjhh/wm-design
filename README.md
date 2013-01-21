@@ -43,10 +43,10 @@ Product collection page:
 
 Product page:
 - [done] la largeur de la page est tres petite, il faut donc mettre plus de white space entre la photo et le cote texte. De maniere plus generale, essayons de plus 'aerer' cette page
-- font de la descripption doit etre un peu plus grand
-- spread the joy doit etre aligne a la droite de page. 
-- je veux un pin it bouton sur le coin droite en bas de la photo
-- titre du produit: font must be slightly smaller
+- [done] font de la descripption doit etre un peu plus grand
+- [done] spread the joy doit etre aligne a la droite de page. 
+- [done] je veux un pin it bouton sur le coin droite en bas de la photo
+- [done] titre du produit: font must be slightly smaller
 
 Added by James:
 

@@ -1161,6 +1161,17 @@ input {
 .brands-grid .designer a p {
   text-align: justify;
 }
+.high-res-images a {
+  display: block;
+  float: left;
+  margin: 2px;
+  text-decoration: none;
+  color: inherit;
+}
+.high-res-images a img {
+  display: block;
+  border: 1px solid #c0c0c0;
+}
 #index-grid-wrap {
   width: 306px;
   margin: 0 auto;

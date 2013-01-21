@@ -1,13 +1,12 @@
 // Global Variables
 
-// !!!!! TAKE OFF TIMES BELOW, FOR TESTING
 regularFont()
-  font-family "nimbus-sans", Times, "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif
+  font-family "nimbus-sans", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif
   font-weight 400
   font-stretch normal
  
 condensedFont()
-  font-family "nimbus-sans-condensed", Times, "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed",  "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif
+  font-family "nimbus-sans-condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed",  "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial Narrow", "Arial", sans-serif
   font-weight 400
   font-stretch condensed
 
@@ -19,6 +18,7 @@ accentColour = #E50000
 veryLightGray = #F8F8F8
 veryLightGrayBorder = darken(veryLightGray, 6%)
 nearBlack = #222
+veryNearBlack = darken(nearBlack, 70%)
 
 // All the z-indexes in one place
 headerZindex = 100
@@ -136,6 +136,7 @@ a:focus
 
 input
   border 1px solid silver
+  padding 3px
 
 .copy
   text-align justify

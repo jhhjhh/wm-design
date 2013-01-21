@@ -31,16 +31,23 @@ blockBorderWidth = 4px
   width 150px
   height 150px
   margin 3px 0
+  .hover-effect
+    position absolute
+    top 0
+    left 0
+    width 100%
+    height 100%
+    &:hover
+      background-color rgba(white, 0.1)
   .inner
     color white
-    background-color nearBlack
-    padding 0.3em
-    text-shadow: 0 0 6px rgba(0,0,0,0.15);
+    background-color veryNearBlack
     position absolute
-    bottom 0
+    top 50%
+    left 0
     h3
-      font-size 2em
-      margin 0.4em 0 0.1em 0
+      font-size 2.3em
+      margin 0 0.2em
       line-height 1
     p
       margin 0 0 0.3em 0
@@ -59,16 +66,33 @@ blockBorderWidth = 4px
   .newsletter
     width 306px - 2 * blockBorderWidth
     height 150px - 2 * blockBorderWidth
-    border blockBorderWidth solid nearBlack
+    border blockBorderWidth solid veryNearBlack
     background-color white
     text-align center
+    color veryNearBlack
     h3
       font-size 1.6em
       margin 0.7em 0 0 0
     p
-      margin 0.5em 0
+      margin 0.2em 0 0.5em 0
     input
       margin-top 0.5em
+  .sale
+    display block
+    border 4px solid veryNearBlack
+    background-color white
+    &:hover
+      background-color darken(white, 5%)
+    width 150px - 8px
+    height 150px - 8px
+    text-align center
+    invisibleLink()
+    h2
+      color veryNearBlack
+      font-size 1.7em
+      margin 2.4em 0 0.2em 0
+    p
+      margin-top 0.3em
 
 /* ===== Side ===== */
 

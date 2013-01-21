@@ -1,91 +1,45 @@
+//////////////////////////////////////////////////////////////
+//    Log in
+//////////////////////////////////////////////////////////////
+
+.log-in-page
+  centered(320px)
+
+.log-in-page
+  .box
+    width 320px - 4 * 10px - 2px
+    h2
+      margin 0 0
+      text-align center
+    float left
+    border 1px solid silver
+    padding 10px
+    margin 10px
+
+.form-row
+  margin 0 0 5px 0
+  label
+    float left
+    width 30%
+  input
+    float right
+    width 65%
+    padding 3px
+
+@media screen and (min-width: 640px)
+  .log-in-page.show_guest_login
+    width 640px
+
+.errors
+  padding 5px
+  margin-bottom 10px
+  background-color #F5B3B3
+  ul
+    list-style square
+
 /* =================
  * Customer Accounts
  * ================= */
-
-.large_form input {
-  margin-bottom: 6px;
-  width: 200px;
-}
-.large_form label {
-  float: left;
-  width: 90px;
-  padding-right: 8px;
-}
-
-.page-header #page-title{ float: left; border: none; margin: 0; }
-.page-header #page-actions{ float: right; }
-
-.templateCustomersLogin form input,
-.templateCustomersRegister form input{
-  float: left;
-}
-.templateCustomersLogin form label,
-.templateCustomersRegister form label{
-  float: left;
-  min-width: 120px;
-  line-height: 22px;
-}
-.templateCustomersLogin .form-row,
-.templateCustomersActivateAccount .form-row,
-.templateCustomersRegister .form-row{
-  margin: 0 0 8px 0;
-}
-.templateCustomersLogin .action-bottom,
-.templateCustomersRegister .action-bottom{
-  margin: 20px 0 0 0;
-}
-.templateCustomersLogin .action-bottom .note,
-.templateCustomersRegister .action-bottom .note{
-  font-size: 11px;
-  padding: 0 0 0 5px;
-  line-height: 27px;
-}
-
-/* >> login Form */
-#login_email {
-  padding-top: 15px;
-}
-
-.action_bottom {
-  margin-top: 15px;
-}
-
-#customer_login, #recover-password {
-  float: left;
-  width: 55%;
-}
-#recover-password{
-  display: none;
-  margin-top: 20px;
-}
-#recover-password h2 {
-  font-size: 1.2em;
-}
-#recover_email label{
-  min-width: 75px;
-}
-#forgot_password{
-  margin: 2px 0 0 0;
-  font-size: 11px;
-  float: left;
-}
-
-#guest{
-  text-align: center;
-  float: right;
-  width: 30%
-}
-
-#guest h3 {
-  margin-top: 0;
-}
-
-#customer_login, #recover-password, #guest {
-  border: dashed 1px silver;
-  padding: 1em;
-  height: 140px;
-}
-
 
 /* >> manage orders and addresses */
 

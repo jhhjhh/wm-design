@@ -1436,8 +1436,12 @@ input {
   clear: both;
 }
 .accordion-designer-title {
+  text-decoration: none;
+  color: inherit;
+}
+.accordion-designer-title h3 {
   font-size: 1.5em;
-  margin-top: 0;
+  margin: 0 0;
 }
 @media screen and (min-width: 746px) {
   .product-title-small {
@@ -1709,88 +1713,45 @@ col.checkout-delete {
 .payment {
   width: 600px;
 }
-.large_form input {
-  margin-bottom: 6px;
-  width: 200px;
+.log-in-page {
+  width: 320px;
+  margin: 0 auto;
 }
-.large_form label {
+.log-in-page .box {
+  width: 278px;
   float: left;
-  width: 90px;
-  padding-right: 8px;
+  border: 1px solid #c0c0c0;
+  padding: 10px;
+  margin: 10px;
 }
-.page-header #page-title {
-  float: left;
-  border: none;
-  margin: 0;
-}
-.page-header #page-actions {
-  float: right;
-}
-.templateCustomersLogin form input,
-.templateCustomersRegister form input {
-  float: left;
-}
-.templateCustomersLogin form label,
-.templateCustomersRegister form label {
-  float: left;
-  min-width: 120px;
-  line-height: 22px;
-}
-.templateCustomersLogin .form-row,
-.templateCustomersActivateAccount .form-row,
-.templateCustomersRegister .form-row {
-  margin: 0 0 8px 0;
-}
-.templateCustomersLogin .action-bottom,
-.templateCustomersRegister .action-bottom {
-  margin: 20px 0 0 0;
-}
-.templateCustomersLogin .action-bottom .note,
-.templateCustomersRegister .action-bottom .note {
-  font-size: 11px;
-  padding: 0 0 0 5px;
-  line-height: 27px;
-}
-#login_email {
-  padding-top: 15px;
-}
-.action_bottom {
-  margin-top: 15px;
-}
-#customer_login,
-#recover-password {
-  float: left;
-  width: 55%;
-}
-#recover-password {
-  display: none;
-  margin-top: 20px;
-}
-#recover-password h2 {
-  font-size: 1.2em;
-}
-#recover_email label {
-  min-width: 75px;
-}
-#forgot_password {
-  margin: 2px 0 0 0;
-  font-size: 11px;
-  float: left;
-}
-#guest {
+.log-in-page .box h2 {
+  margin: 0 0;
   text-align: center;
-  float: right;
+}
+.form-row {
+  margin: 0 0 5px 0;
+}
+.form-row label {
+  float: left;
   width: 30%;
 }
-#guest h3 {
-  margin-top: 0;
+.form-row input {
+  float: right;
+  width: 65%;
+  padding: 3px;
 }
-#customer_login,
-#recover-password,
-#guest {
-  border: dashed 1px #c0c0c0;
-  padding: 1em;
-  height: 140px;
+@media screen and (min-width: 640px) {
+  .log-in-page.show_guest_login {
+    width: 640px;
+  }
+}
+.errors {
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: #f5b3b3;
+}
+.errors ul {
+  list-style: square;
 }
 .customer_address {
   text-transform: capitalize;

@@ -7,25 +7,25 @@
   max-width 900px
   min-width 600px
 
-.checkout-button {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: white;
-  font-size: 1.2em;
-  text-align: center;
-  width: 162px;
-  padding: 15px 0 15px 0;
-}
+.checkout-button
+  headerText()
+  font-size 1.2em
+  width 162px
+  padding 15px 0 15px 0
 
-.empty {
-  text-align: center;
-}
+.remove-from-cart
+  color nearBlack
+  &:hover
+    color lighten(nearBlack, 10%)
 
-#cartform table{
-  border: 2px solid #EDEDEE;
-  width: 100%;
-  margin: 0 0 20px 0;
-}
+.empty
+  text-align center
+
+#cartform table
+  border 2px solid #EDEDEE
+  width 100%
+  margin 0 0 20px 0
+
 #cartform table td {
   text-align: center;
   vertical-align: top;
@@ -77,14 +77,10 @@ col.checkout-delete{ width: 80px; }
   font-weight: bold;
 }
 
-#cartform .basket-product-link {
-  font-weight: normal;
-  text-transform: uppercase;
-  padding-left: 10px;
-  text-align: left;
-  invisibleLink()
-}
+#cartform .basket-product-link
+  text-align left
+  a
+    invisibleLink()
 
-.payment {
-  width: 600px;
-}
+.payment
+  width 600px

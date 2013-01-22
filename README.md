@@ -52,3 +52,6 @@ Added by James:
 
 - Remove isotope from editorials
 - make three wanderers youtube video responsive
+
+- Fully Implement YotPo reviews
+- Remove Grapevine reviews (uninstall, remove javascript, remove css)

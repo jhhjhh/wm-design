@@ -1,0 +1,79 @@
+/*** General widget box start ***/
+.yotpo {
+  width: 100%;
+}
+/*** General widget box stop ***/
+/*** General widget texts settings start ***/
+.yotpo,
+.yotpo div,
+.yotpo span,
+.yotpo p,
+.yotpo a,
+.yotpo img,
+.yotpo i,
+.yotpo strong,
+.yotpo sup,
+.yotpo ul,
+.yotpo li,
+.yotpo form,
+.yotpo label {
+  font-family: "nimbus-sans", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-weight: 400;
+  font-stretch: normal;
+}
+/*** General widget texts settings stop ***/
+/*** header start ***/
+.yotpo .yoTop {
+  background-color: #e3e3e3;
+}
+/*** X Reviews settings start ***/
+.yotpo .yoResult,
+.yotpo .yoResult span {
+  color: #005696;
+  font-size: 13px;
+}
+/*** X Reviews settings end ***/
+/*** header end ***/
+/*** footer start ***/
+.yotpo .yoPager {
+  background-color: #f0f0f0;
+  font-size: 9;
+}
+/*** Pageing link settings start ***/
+.yotpo .yoPager a {
+  color: #f00;
+}
+/*** Pageing link settings stop ***/
+/*** footer end ***/
+/*** content start ***/
+.yotpo .yoWrite,
+.yotpo .yoReview {
+  background-color: #fff;
+}
+.yotpo .yoWrite:hover,
+.yotpo .yoReview:hover {
+  background-color: #f0f0f0;
+}
+.yotpo .yoReview .yoTitle {
+  color: #005597;
+  font-size: 13px;
+}
+.yotpo .yoReview .yoText {
+  color: #22262a;
+  font-size: 13px;
+}
+.yotpo .yoReview .yoDate {
+  color: #313438;
+  font-size: 10px;
+}
+/*** content end ***/
+/*** bottom line settings start ***/
+.yotpo_bottomline .text {
+  color: #005696;
+  font-size: 13px;
+}
+.yotpo_bottomline .stars img {
+  width: 13px;
+  height: 13px;
+}
+/*** bottom line settings end ***/

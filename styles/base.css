@@ -523,7 +523,7 @@ input {
   color: #fff;
 }
 .bottom-wrap {
-  font-size: 1.05em;
+  font-size: 1.1em;
   background-color: #f8f8f8;
   border-top: 1px solid #e9e9e9;
   margin-top: 0.5em;
@@ -1173,6 +1173,48 @@ input {
   display: block;
   border: 1px solid #c0c0c0;
 }
+.news-blog,
+.blog-article {
+  width: 96%;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.blog-article-list {
+  list-style: none;
+  padding: 0;
+}
+.blog-article-list .blog-article {
+  width: 100%;
+}
+.blog-article-date {
+  font-size: 0.9em;
+  margin: 1em 0 0.2em 0;
+  color: #e50000;
+}
+.blog-article-title-outter {
+  font-size: 1.4em;
+  line-height: 1.1em;
+  margin: 0 0 0.5em 0;
+}
+.blog-article-title-outter a {
+  text-decoration: none;
+  color: inherit;
+}
+.blog-read-more {
+  display: block;
+  margin-top: 0.4em;
+  text-decoration: none;
+  color: inherit;
+  color: #646464;
+}
+.blog-content {
+  padding: 0;
+  list-style: none;
+}
+.blog-article .main-title a {
+  text-decoration: none;
+  color: inherit;
+}
 #index-grid-wrap {
   width: 306px;
   margin: 0 auto;
@@ -1746,6 +1788,10 @@ col.checkout-delete {
 }
 .payment {
   width: 600px;
+}
+.create-customer {
+  width: 300px;
+  margin: 0 auto;
 }
 .log-in-page {
   width: 320px;

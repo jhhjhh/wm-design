@@ -1,0 +1,25 @@
+/* ===============================================================
+   EDITORIALS
+   =============================================================== */
+
+.editorials-grid-wrap
+  centered(310px) // 1 block
+
+@media screen and (min-width: 620px)
+  .editorials-grid-wrap
+    width 620px // 2 blocks
+@media screen and (min-width: 930px)
+  .editorials-grid-wrap
+    width 930px // 3 blocks
+@media screen and (min-width: 1240px)
+  .editorials-grid-wrap
+    width 1240px // 4 blocks
+
+.editorials-grid-item
+  width 300px
+  float left
+  margin 5px
+  a
+    invisibleLink()
+    h3
+      text-align center

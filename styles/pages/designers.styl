@@ -1,0 +1,41 @@
+///////////////////////////////////////////////////////////
+//   Designers
+///////////////////////////////////////////////////////////
+
+.brands-grid
+  clearfix()
+  width gridWidth(1, 220px, 7px)
+  margin 0 auto
+
+// 446
+@media screen and (min-width: 468px)
+  .brands-grid
+    width gridWidth(2, 220px, 7px)
+
+//668
+@media screen and (min-width: 702px)
+  .brands-grid
+    width gridWidth(3, 220px, 7px)
+
+// 890
+@media screen and (min-width: 936px)
+  .brands-grid
+    width gridWidth(4, 220px, 7px)
+
+// 1112
+@media screen and (min-width: 1170px)
+  .brands-grid
+    width gridWidth(5, 220px, 7px)
+
+.brands-grid
+  .designer
+    margin 7px
+    float left
+    width 220px
+    height 380px
+    a
+      invisibleLink()
+      h3
+        text-align center
+      p
+        text-align justify

@@ -6,21 +6,35 @@
   position fixed
   bottom 0
   z-index fixedFooterZindex
-  background-color pastelColour6
-  border-top 1px solid darken(pastelColour6, 7%)
+  background-color veryLightGray
+  border-top 1px solid veryLightGrayBorder
   width 100%
-  padding 1em
+  padding 0.5em
+
+.mailchimp
+  width 230px
+  .input
+    float left
+    width 140px
+    input
+      padding 6px
+      border none
+  .submit
+    float right
+    input
+      padding 6px
+      text-transform uppercase
+      font-weight bold
+
+.newsletter
+  margin-left 1em
+  clearfix()
+  width 400px
   .mailchimp
-    width 300px
-    .input
-      float left
-      width 120px
-      input
-        padding 3px
-    .submit
-      float right
-      input
-        padding 4px
+    float left
+  .call
+    float right
+    margin-top 4px
 
 // big footer
 

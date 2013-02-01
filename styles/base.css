@@ -531,16 +531,19 @@ input {
   width: 100%;
   padding: 0.5em;
 }
+.fixed-footer .call-out {
+  float: right;
+}
 .mailchimp {
   width: 230px;
 }
-.mailchimp .input {
+.mailchimp .text-input {
   float: left;
   width: 140px;
 }
-.mailchimp .input input {
-  padding: 6px;
-  border: none;
+.mailchimp .text-input input {
+  padding: 5px;
+  border: 1px solid #c0c0c0;
 }
 .mailchimp .submit {
   float: right;
